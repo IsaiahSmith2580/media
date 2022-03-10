@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  min-width: 375px;
+}
+
+header {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.section-one img {
+  display: none;
+}
+
+.section-one {
+  margin-bottom: 5rem;
+}
+
+.section-one-text {
+  text-align: center;
+  margin-bottom: 5rem;
+  line-height: 2;
+}
+
+.section-one-text h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.section-one-text button {
+  padding: 1rem 2rem;
+  color: #fff;
+  border-style: none;
+}
+
+.btn-1 {
+  background-color: #4892a6;
+  /* border: 2px; */
+  border-radius: 5rem;
+}
+
+.btn-2 {
+  background-color: #8460b3;
+  border-radius: 5rem;
+  margin-right: 2rem;
+}
+
+.section-two {
+  margin: 1rem 1rem;
+}
+
+.section-two img {
+  width: 100%;
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  margin-bottom: 1rem;
+}
+
+.section-three {
+  text-align: center;
+}
+
+.section-three h5 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #4892a6;
+}
+
+.section-three h1 {
+  font-size: 1.5rem;
+}
+
+.section-three p {
+  padding: 0 2rem;
+}
+
+/* Media Query for Breakpoints */
+
+@media (min-width: 576px) {
+  .section-one .section-one-text {
+    /* background-image: url(/assets/desktop/image-hero-left.png); */
+    /* background: linear-gradient(to left bottom, #4892a6, #8460b3); */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(/assets/desktop/image-hero-left.png);
+    color: #fff;
+
+    padding: 3rem;
+  }
+  .section-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+
+  .section-two img {
+    border-radius: 3rem;
+  }
+
+  .section-two img:hover {
+    border-radius: ;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-one .section-one-text {
+    background: #fff;
+    color: #000;
+  }
+  .section-one .section-one img {
+    display: block;
+    width: 100%;
+  }
+  .section-one {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+  }
+
+  .section-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
